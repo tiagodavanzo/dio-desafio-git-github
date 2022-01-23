@@ -1,0 +1,52 @@
+Mudar de pastas
+Listas pastas
+Criar pastas/arquivos
+Excluir pastas/arquivos
+
+Windows | Linux
+- cd (mesmo)
+- dir | ls
+- mkdir (mesmo)
+- del / rmdir | rm -rf
+- cls | clear
+- tab (autocomplete)
+
+Algortimo de encriptação: sha1, com 40 caracteres
+
+Objetos internos do Git
+
+- Blob: os arquivos ficam dentre desses objetos, com metadados. É o bloco básico de composição;
+
+- Tree: Armezena, aponta para os blobs e também os tipos de estrutura de dados chamados commits. Ele guarda o sha1 gerado para o arquivo. É um objeto que encapsula esse comportamento de diretórios;
+
+- Commits: é o objeto que vai juntar tudo. Aponta para o tree, parente, autor, mensagem e data e hora.
+
+Sistema distribuído seguro
+
+Chaves SSH e Tokens
+
+
+Comandos
+
+git init: inicia o git dentro da pasta
+git add: adiciona os arquivos para o commit
+git commit: faz o commit, com a opção de inserir um comentário. Exemplo: git commit -m "Meu primeiro commit"
+git status: monitora os status dos arquivos
+
+Definindo as configurações de um autor
+
+git config --global user.email "tiago.davanzo@gmail.com"
+git config --global user.name "Tiago Davanzo"
+
+Ciclo de Vida
+
+O arquivo passa tem 3 estágios: unmodified, modified e staged, além do untracked, que são os arquivos que o git não tem ciência deles.
+
+Unmodified: ainda não foi modificado
+Modified: arquivo que sofreu modificação
+Staged: arquivos que estão se preparando para fazer parte de um commit
+
+Github
+
+git remote add origin https://github.com/tiagodavanzo/livro-receitas.git
+git push origin master
